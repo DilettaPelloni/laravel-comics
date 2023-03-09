@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- ASSET -->
-        @vite('resources/js/app.js')
-        
-        <title>Laravel Comics</title>
-    </head>
-    <body>
-        <h1>hello mondo</h1>
-    </body>
-</html>
+@extends('layouts.main-layout')
+
+@section('pageTitle') Home | Laravel Comics @endsection
+
+@section('pageContent')
+    <h1>MAIN</h1>
+@endsection
