@@ -9,6 +9,9 @@ header {
         a {
             padding-inline: 1rem;
             font-size: 0.8rem;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
     .main-bar {

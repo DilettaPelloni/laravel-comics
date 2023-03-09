@@ -4,10 +4,14 @@ const path = require('path');
 
 export default defineConfig({
     plugins: [
-        laravel([
-            'resources/scss/app.scss',
-            'resources/js/app.js',
-        ]),
+        laravel({
+            input: [
+                // Modifichiamo il percorso del css usando sass
+                'resources/scss/app.scss',
+                'resources/js/app.js'
+            ],
+            refresh: true,
+        }),
     ],
     resolve: {
 		alias: {
